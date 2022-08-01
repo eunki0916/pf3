@@ -1,4 +1,7 @@
 @media screen and (max-width:1200px) {
+  body {
+    padding: 0;
+  }
   header {
     
   position: absolute;
@@ -19,7 +22,77 @@
   /*! right: 10px; */
   position: static;
   }
+  #title {
+    
+  min-height: 20.20833333333333vw;
   
+  height: 700px;
+  }
+  #title::before {
+    
+  width: 78.54166666666667vw;
+  height: 20.20833333333333vw;
+  }
+  #title ul.hash {
+    column-gap: 20px;
+  }
+  #title form.search {
+    
+  width: 36.45833333333333vw;
+  min-width: 400px;
+  }
+/*  빙그레맛  */
+  #taste .inner ul.list {
+    
+  }
+  #taste .inner ul.list li {
+  
+  width: calc((100% / 3) - (50px / 3));
+  }
+/*  브랜드샵  */
+  #shop::before {
+    display: none;
+  }
+  #shop .inner ul.list {
+    
+  flex-wrap: wrap;
+  }
+  #shop .inner ul.list li {
+    
+  width: calc(100% / 3 - 20px / 3);
+  }
+  #community .inner {
+    
+  width: 100%;
+  }
+  #community .inner > article {
+  background-size: 100px;
+  background-position: right;  
+  width: 90%;
+  }
+  #community .inner div article ul {
+    
+  flex-direction: column;
+  }
+  #community .inner div article ul li {
+    
+  width: 100%;
+  line-height: 2;
+  }
+  #community .inner div {
+    
+  gap: 20px;
+  padding: 30px 15px;
+  }
+  #community .inner div article ul li a {
+    
+  padding: 20px 10px;
+  }
+  #community .inner div article:not(.faq) {
+    
+  width: 100%;
+  background-size: 70px;
+  }
 }
 
 @media screen and (max-width:768px) {
